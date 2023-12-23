@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../New Travelling"
+		}
+	],
+	"settings": {
+		"svn.ignoreMissingSvnWarning": true,
+		"liveServer.settings.multiRootWorkspaceName": "WD-1 Assignment"
+	}
+}

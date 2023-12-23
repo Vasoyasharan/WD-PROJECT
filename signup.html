@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Logo in URL -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/t4.png" />
+
+    <style>
+      .rounded {
+        border-radius: 2.25rem;
+      }
+      .shadow-lg {
+        color: rgb(72, 128, 231);
+      }
+      .starline {
+        font-weight: normal;
+        font-size: small;
+      }
+      .px-3 {
+        padding-right: 7.75rem;
+      }
+    </style>
+    <title>Hospital Sign-Up</title>
+  </head>
+  <body class="bg-blue-200">
+    <div class="min-h-screen flex items-center justify-center">
+      <div class="bg-blue-300 p-8 rounded shadow-lg w-96">
+        <div class="text-3xl font-extrabold">
+          <h1>Mico Hospital</h1>
+        </div>
+        <h1 class="text-2xl font-semibold mb-4">Sign-Up</h1>
+        <form id="signup-form">
+          <div class="mb-4">
+            <label for="name" class="block text-gray-700">Full Name*</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="w-full border rounded px-3 py-2"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-gray-700">Email ID*</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full border rounded px-3 py-2"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="number" class="block text-gray-700"
+              >Mobile Number</label
+            >
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              class="W-full border rounded px-3 py-2"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="password" class="block text-gray-700">Password*</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="w-full border rounded px-3 py-2"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="confirm-password" class="block text-gray-700">
+              Confirm Password*</label
+            >
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              class="w-full border rounded px-3 py-2"
+            />
+          </div>
+          <p class="starline text-gray-900">* Are Required Fields</p>
+          <br />
+          <button
+            type="submit"
+            class="bg-blue-500 text-white rounded px-4 py-2 hover:bg-blue-600"
+          >
+            Sign-Up
+          </button>
+          <button
+            type="submit"
+            class="bg-blue-500 text-white rounded px-4 py-2 hover:bg-blue-600"
+          >
+            <a href="login.html">Log-in</a>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("signup-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const phone = document.getElementById("phone").value;
+          const password = document.getElementById("password").value;
+          const confirmPassword =
+            document.getElementById("confirm-password").value;
+
+          if (
+            name === "" ||
+            email === "" ||
+            password === "" ||
+            confirmPassword === ""
+          ) {
+            alert("Please Fill in All Required(*) Field");
+            return;
+          }
+
+          if (password !== confirmPassword) {
+            alert("Passwords do not match.");
+            return;
+          }
+
+          window.location.href = "index.html";
+        });
+    </script>
+  </body>
+</html>

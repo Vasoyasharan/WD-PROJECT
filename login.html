@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Logo in URL -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/t4.png" />
+    <title>Login Page</title>
+    <style>
+      .form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background: rgba(147, 197, 253);
+        padding: 82px;
+        width: 305px;
+        border-radius: 30px;
+        border-top: 80px;
+      }
+
+      .login {
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .flex {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .form button {
+        margin-top: 25px;
+        margin-bottom: 6px;
+        border-radius: 10px;
+        border: none;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        font-size: 19px;
+        font-weight: bold;
+        color: lightblue;
+      }
+
+      .form label {
+        margin-top: 20px;
+        margin-bottom: 5px;
+      }
+
+      .form button:hover {
+        box-shadow: 2px 2px 12px white;
+      }
+
+      .input {
+        height: 30px;
+        outline: none;
+        padding: 15px;
+        border-radius: 26px;
+        border: none;
+        font-weight: bold;
+        font-size: 15px;
+        box-shadow: 2px 2px 12px inset black;
+        background: rgb(159, 183, 228);
+      }
+
+      .span:hover {
+        font-weight: bold;
+      }
+      a {
+        color: #000000;
+        text-decoration-line: none;
+      }
+
+      .color {
+        color: white;
+      }
+
+      .align {
+        text-align: center;
+      }
+      .loginhead {
+        text-align: center;
+        font-size: x-large;
+      }
+    </style>
+  </head>
+
+  <body
+    style="
+      display: flex;
+      justify-content: center;
+      padding-top: 105px;
+      background-color: rgb(173, 199, 231);
+    "
+  >
+    <form class="form" id="loginForm">
+      <div class="flex">
+        <h3 class="loginhead"><b>Mico Hospital </b></h3>
+        <div class="login color">Login</div>
+        <label class="color">Username :</label>
+        <input type="text" class="input" />
+        <label class="color">Password :</label>
+        <input type="password" class="input" />
+        <button class="colorlog" id="loginButton">Log-in</button>
+        <br />
+        <div class="color align">
+          Don't have account?
+          <span class="span"><a href="signup.html">Sign-Up</a></span>
+        </div>
+      </div>
+    </form>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const loginForm = document.getElementById("loginForm");
+        const loginButton = document.getElementById("loginButton");
+
+        loginButton.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const username = document.querySelector("input[type='text']").value;
+          const password = document.querySelector(
+            "input[type='password']"
+          ).value;
+
+          if (username.trim() === "" || password.trim() === "") {
+            alert("Please fill in both username and password fields.");
+          } else {
+            window.location.href = "index.html";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
