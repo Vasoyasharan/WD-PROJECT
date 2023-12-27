@@ -1,5 +1,5 @@
 # WD-PROJECT
-this project is made for clg Assignment for sem-3 
-author: sharan vasoya 
-sem: 3
-subject :   WD-1
+This Project is made for clg Assignment in sem-3 
+Author: sharan vasoya 
+Sem: 3
+Subject :   WD-1
