@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+
+    <!-- Bootstrap css file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Favicon icon -->
+    <link rel="icon" href="image/logo.webp">
+
+    <!-- Font Awesome css file -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- Owl Carousal css file -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    <!-- Owl Carousal Theme css file -->
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <!-- Custom css file -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Header Section Start -->
+
+    <section class="header d-flex mb-0 justify-content-between align-items-center position-sticky">
+       
+        <div>
+            <a href="index.html"><img src="image/logo.webp" alt="" class="logo"></a>
+        </div>
+        <div>
+            <ul class="navbar d-flex mb-0 justify-content-between align-items-center">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="Accessories.html">Accessories</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="login.html"><i class="fa-solid fa-user me-2"></i>Log-in/Register</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Header Section End -->
+
+    <section class="wrapper">
+        <div class="form signup">
+            <header>Signup</header>
+            <form action="#">
+                <input type="text" placeholder="Full name" required />
+                <input type="text" placeholder="Email address" required />
+                <input type="password" placeholder="Password" required />
+                <div class="checkbox">
+                    <input type="checkbox" id="signupCheck" />
+                    <label for="signupCheck">I accept all terms & conditions</label>
+                </div>
+                <input type="submit" value="Signup" />
+            </form>
+        </div>
+
+        <div class="form login">
+            <header>Login</header>
+            <form action="#">
+                <input type="text" placeholder="Email address" required />
+                <input type="password" placeholder="Password" required />
+                <a href="#">Forgot password?</a>
+                <input type="submit" value="Login" />
+            </form>
+        </div>
+
+        <script>
+            const wrapper = document.querySelector(".wrapper"),
+                signupHeader = document.querySelector(".signup header"),
+                loginHeader = document.querySelector(".login header");
+
+            loginHeader.addEventListener("click", () => {
+                wrapper.classList.add("active");
+            });
+            signupHeader.addEventListener("click", () => {
+                wrapper.classList.remove("active");
+            });
+        </script>
+    </section>
+
+    <!-- Footer Section Start -->
+
+    <footer class="spacey d-flex justify-content-between flex-wrap">
+        <div class="col d-flex align-items-start flex-column">
+           <h4><b>Conatct</b></h4>
+            <p><strong>Address:</strong>Cupertino, California, U.S.</p>
+            <p><strong>Phone:</strong>+01 8756365/+91 0165426874</p>
+            <p><strong>Hours:</strong>09:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4><b>About</b></h4>
+            <a href="about.html">About us</a>
+            <a href="">Delivery Information</a>
+            <a href="">Privacy Pilicy</a>
+            <a href="">Terms & Conditions</a>
+            <a href="">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4><b>My Account</b></h4>
+            <a href="login.html">Sign In</a>
+            <a href="">View Cart</a>
+            <a href="">My Wishlist</a>
+            <a href="">Track My Order</a>
+            <a href="">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4><b>Install App</b></h4>
+            <p>From App Store Or Google Play</p>
+            <div class="row">
+                <img src="image/23.webp" alt="Appstore">
+                <img src="image/22.jpg" alt="playstore">
+                <p>Secuerd Payment GateWays</p>
+                <div class="payment">
+                    <img src="image/19.webp" alt="">
+                    <img src="image/20.webp" alt="">
+                    <img src="image/21.webp" alt="">
+                    <img src="image/24.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>2023, Dk etc - ios Shopping Website</p>
+        </div>
+    </footer>
+
+    <!-- Footer Section End -->
+
+    <!-- Jquery js file -->
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+
+    <!-- Bootstrap js file -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Owl carousal js file -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- Custom js file -->
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
