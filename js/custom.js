@@ -19,9 +19,9 @@ $(function() {
     todayHighlight: true
   }).datepicker('update', new Date());
 });
-+
 
-//  -------------- This Slider Is  Removerd From Website To Make It Simpler For Presentation 
+
+//  -------------- This Slider Is  Removed From Website To Make It Simpler For Presentation 
 // owl carousel slider js 
 $('.team_carousel').owlCarousel({
   loop: true,
@@ -51,7 +51,7 @@ $('.team_carousel').owlCarousel({
 
 
 
-// -------------  Code Of Valadiation Of Contact Form Submission ---------------
+// -------------  Code Of Validation Of Contact Form Submission ---------------
 
   /* document.addEventListener("DOMContentLoaded", function () {
        const contactForm = document.querySelector(".form_container form");
