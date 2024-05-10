@@ -1,138 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Logo in URL -->
-    <link rel="shortcut icon" type="image/x-icon" href="images/t4.png" />
-
-    <style>
-      .rounded {
-        border-radius: 2.25rem;
-      }
-      .shadow-lg {
-        color: rgb(72, 128, 231);
-      }
-      .starline {
-        font-weight: normal;
-        font-size: small;
-      }
-      .px-3 {
-        padding-right: 3.75rem;
-      }
-    </style>
-    <title>Hospital Sign-Up</title>
-  </head>
-  <body class="bg-blue-200">
-    <div class="min-h-screen flex items-center justify-center">
-      <div class="bg-blue-300 p-8 rounded shadow-lg w-96">
-        <div class="text-3xl font-extrabold">
-          <h1>Mico Hospital</h1>
-        </div>
-        <h1 class="text-2xl font-semibold mb-4">Sign-Up</h1>
-        <form id="signup-form">
-          <div class="mb-4">
-            <label for="name" class="block text-gray-700">Full Name*</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              class="w-full border rounded px-3 py-2"
-            />
-          </div>
-          <div class="mb-4">
-            <label for="email" class="block text-gray-700">Email ID*</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              class="w-full border rounded px-3 py-2"
-            />
-          </div>
-          <div class="mb-4">
-            <label for="number" class="block text-gray-700"
-              >Mobile Number</label
-            >
-            <input
-              type="text"
-              id="phone"
-              name="phone"
-              class="W-full border rounded px-3 py-2"
-            />
-          </div>
-          <div class="mb-4">
-            <label for="password" class="block text-gray-700">Password*</label>
-            <input
-              type="password"
-              id="password"
-              name="password"
-              class="w-full border rounded px-3 py-2"
-            />
-          </div>
-          <div class="mb-4">
-            <label for="confirm-password" class="block text-gray-700">
-              Confirm Password*</label
-            >
-            <input
-              type="password"
-              id="confirm-password"
-              name="confirm-password"
-              class="w-full border rounded px-3 py-2"
-            />
-          </div>
-          <p class="starline text-gray-900">* Are Required Fields</p>
-          <br />
-          <button
-            type="submit"
-            class="bg-blue-500 text-white rounded px-4 py-2 hover:bg-blue-600"
-          >
-            Sign-Up
-          </button>
-          <button
-            type="submit"
-            class="bg-blue-500 text-white rounded px-4 py-2 hover:bg-blue-600"
-          >
-            <a href="login.html">Log-in</a>
-          </button>
-        </form>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Sign-Up</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/t4.png">
+  <style>
+    .rounded {
+      border-radius: 2.25rem;
+    }
+    .bg-gradient-to-b {
+      background-image: linear-gradient(to bottom, #2d95f0, #2ab0ff);
+    }
+    .text-gradient {
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      background-image: linear-gradient(to right, #2d95f0, #2ab0ff);
+    }
+    .border-gradient {
+      border: 2px solid;
+      border-image-slice: 1;
+      border-width: 2px;
+      border-image-source: linear-gradient(to right, #2d95f0, #2ab0ff);
+    }
+    .input-style {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+    .input-style:focus {
+      background-color: rgba(255, 255, 255, 1);
+    }
+    .custom-button {
+      background-image: linear-gradient(to right, #2d95f0, #2ab0ff);
+    }
+    .custom-button:hover {
+      background-image: linear-gradient(to right, #2ab0ff, #2d95f0);
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-b from-blue-300 to-blue-200 h-screen flex items-center justify-center">
+  <div class="bg-white p-8 rounded-lg shadow-lg max-w-md">
+    <h1 class="text-3xl text-center font-extrabold text-gradient mb-4">Mico Hospital</h1>
+    <h2 class="text-2xl text-center font-semibold mb-6">Sign-Up</h2>
+    <form id="signup-form">
+      <div class="mb-4">
+        <label for="name" class="block text-gray-700">Full Name*</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          class="w-full border border-gray-300 rounded px-3 py-2 input-style focus:outline-none focus:border-blue-400"
+          placeholder="Enter your full name"
+        />
       </div>
-    </div>
+      <div class="mb-4">
+        <label for="email" class="block text-gray-700">Email ID*</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="w-full border border-gray-300 rounded px-3 py-2 input-style focus:outline-none focus:border-blue-400"
+          placeholder="Enter your email address"
+        />
+      </div>
+      <div class="mb-4">
+        <label for="phone" class="block text-gray-700">Mobile Number</label>
+        <input
+          type="text"
+          id="phone"
+          name="phone"
+          class="w-full border border-gray-300 rounded px-3 py-2 input-style focus:outline-none focus:border-blue-400"
+          placeholder="Enter your mobile number"
+        />
+      </div>
+      <div class="mb-4">
+        <label for="password" class="block text-gray-700">Password*</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          class="w-full border border-gray-300 rounded px-3 py-2 input-style focus:outline-none focus:border-blue-400"
+          placeholder="Enter your password"
+        />
+      </div>
+      <div class="mb-4">
+        <label for="confirm-password" class="block text-gray-700">Confirm Password*</label>
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          class="w-full border border-gray-300 rounded px-3 py-2 input-style focus:outline-none focus:border-blue-400"
+          placeholder="Confirm your password"
+        />
+      </div>
+      <p class="text-sm text-gray-700 mb-6">* Required fields</p>
+      <div class="flex justify-between items-center">
+        <button
+          type="submit"
+          class="w-2/5 bg-blue-500 text-white rounded-full py-2 px-4 text-center font-semibold custom-button focus:outline-none"
+        >
+          Sign-Up
+        </button>
+        <a href="login.html" class="text-blue-500 font-semibold hover:underline">Already have an account? Log in</a>
+      </div>
+    </form>
+  </div>
 
-    <script>
-      document
-        .getElementById("signup-form")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
+  <script>
+    document.getElementById("signup-form").addEventListener("submit", function (e) {
+      e.preventDefault();
 
-          const name = document.getElementById("name").value;
-          const email = document.getElementById("email").value;
-          const phone = document.getElementById("phone").value;
-          const password = document.getElementById("password").value;
-          const confirmPassword =
-            document.getElementById("confirm-password").value;
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const phone = document.getElementById("phone").value;
+      const password = document.getElementById("password").value;
+      const confirmPassword = document.getElementById("confirm-password").value;
 
-          if (
-            name === "" ||
-            email === "" ||
-            password === "" ||
-            confirmPassword === ""
-          ) {
-            alert("Please Fill in All Required(*) Field");
-            return;
-          }
+      if (name === "" || email === "" || password === "" || confirmPassword === "") {
+        alert("Please Fill in All Required(*) Field");
+        return;
+      }
 
-          if (password !== confirmPassword) {
-            alert("Passwords do not match.");
-            return;
-          }
+      if (password !== confirmPassword) {
+        alert("Passwords do not match.");
+        return;
+      }
 
-          window.location.href = "index.html";
-        });
-    </script>
-  </body>
+      window.location.href = "index.html";
+    });
+  </script>
+</body>
 </html>
