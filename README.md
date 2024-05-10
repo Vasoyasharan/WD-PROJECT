@@ -1,6 +1,6 @@
 # WD-PROJECT
 
-### This Project is made for clg Assignment in sem-3 <br>
+### This Project is made for clg Assignment in sem-3 
 
 ### Author: sharan vasoya
 
