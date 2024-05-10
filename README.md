@@ -1,12 +1,18 @@
 # WD-PROJECT
 
-This Project is made for clg Assignment in sem-3
-Author: sharan vasoya
-CLG : SDJIC
-UNi : VNSGU
-Sem: 3
-Subject :   WD-1
-Topic : Hospital Management Website
+### This Project is made for clg Assignment in sem-3 <br>
+
+### Author: sharan vasoya
+
+## CLG : SDJIC
+
+## UNi : VNSGU
+
+### Sem: 3
+
+### Subject :   WD-1
+
+### Topic : Hospital Management Website
 
 Features it include
 
