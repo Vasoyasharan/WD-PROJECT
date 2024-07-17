@@ -1,0 +1,143 @@
+body{
+    background:#ecf0f3;
+}
+.group
+{
+    width:100%;
+    padding:15px;
+    margin:auto;
+    border-radius: 20px;
+    box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.37),
+    -10px -10px 12px rgba(255, 255, 255, 0.842);
+    background:#ecf0f3;
+}
+
+.title
+{
+    height:75px;
+    color: #4e555b;
+    border-radius: 22px 22px 0 0;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight:600;
+}
+.form-group label
+{
+    color: #4e555b;
+    font-size: 1rem;
+    margin-left: 1%;
+}
+.form input,
+.form textarea
+{
+    padding: 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    box-shadow: inset 9px 9px 9px #80d39b75,
+    inset -8px -8px 8px white;
+    border-radius: 25px;
+    background: #ecf0f3;
+    border: none;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+.btn-add{
+
+    width:15%;
+    border-radius: 20px !important;
+    margin-left: 50% !important;
+    transform: translateX(-50%);
+    background: #00c6a9 !important;
+    border: none !important;
+    color: #fff !important;
+    font-size: 1.2rem;
+    font-weight:400;
+
+}
+button.edits
+{
+
+    width:15%;
+    border-radius: 20px !important;
+    margin-left: 50% !important;
+    background: #00c6a9 !important;
+    color: #212529;
+    border-color: #ffc107;
+    transform: translateX(-50%);
+    border: none !important;
+    font-size: 1.2rem;
+    font-weight:400;
+    display: none;
+
+
+}
+.search
+{
+    padding: 25px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+    box-shadow: inset 9px 9px 9px #83f8c275,
+    inset -8px -8px 8px white;
+    border-radius: 5px;
+    background: #ecf0f3;
+    border: none;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+.styled-table,
+.search
+{
+    border-collapse: collapse;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    width: 100%;
+    box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.37),
+    -10px -10px 12px rgba(255, 255, 255, 0.842);
+    color: #4e555b;
+    text-align: center;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+button.update, button.delete {
+    border-radius: 8px !important;
+    border: none !important;
+    color: #fff !important;
+    font-size: 1.2rem;
+    font-weight:400;
+}
+@media screen and (max-width: 768px) {
+    .btn-add,
+    button.edits
+    {
+
+        width: 35%;
+        font-size: 0.8rem;
+    }
+
+
+    .styled-table
+    {
+        font-size: 0.3em;
+        width: 50% !important;
+    }
+
+    .styled-table th,
+    .styled-table td {
+        padding: 12px 5px;
+
+    }
+    .btn-warning,.btn-danger
+    {
+        font-size: 0.3rem;
+    }
+
+    button.update, button.delete {
+        font-size: 0.5rem !important;
+    }
+}
