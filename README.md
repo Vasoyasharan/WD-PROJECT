@@ -92,4 +92,4 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## Contact
 
-If you have any questions or suggestions, please contact us at [email](mailto:sharanvasoya143@gmail.com)
+If you have any questions or suggestions, please contact us at [email](mailto:sharanvasoya.dev@protone.me)
